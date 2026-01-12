@@ -53,7 +53,7 @@ const Skills = () => {
           {/* Section Header */}
           <div className="text-center mb-16">
             <span className="terminal-text text-primary text-sm tracking-wider uppercase mb-2 block">
-              // Technical Proficiency
+              Technical Proficiency
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
               Skills & Expertise
@@ -67,8 +67,7 @@ const Skills = () => {
                 key={index}
                 className="card-cyber p-6"
               >
-                <h3 className="terminal-text text-xl font-semibold text-primary mb-6 flex items-center gap-2">
-                  <span className="text-muted-foreground">&gt;</span>
+                <h3 className="terminal-text text-xl font-semibold text-primary mb-6">
                   {category.title}
                 </h3>
                 <div className="flex flex-wrap gap-2">

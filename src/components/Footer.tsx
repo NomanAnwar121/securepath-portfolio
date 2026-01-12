@@ -1,4 +1,4 @@
-import { Terminal, Shield } from "lucide-react";
+import { Shield } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <Terminal className="w-5 h-5 text-primary" />
+            <Shield className="w-5 h-5 text-primary" />
             <span className="terminal-text font-semibold text-foreground">
               M Noman Anwar
             </span>

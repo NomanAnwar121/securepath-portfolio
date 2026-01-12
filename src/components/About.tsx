@@ -26,7 +26,7 @@ const About = () => {
           {/* Section Header */}
           <div className="mb-12">
             <span className="terminal-text text-primary text-sm tracking-wider uppercase mb-2 block">
-              // About Me
+              About Me
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
               Building Secure Digital Foundations
