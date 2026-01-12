@@ -36,7 +36,7 @@ const Certifications = () => {
           {/* Section Header */}
           <div className="text-center mb-16">
             <span className="terminal-text text-primary text-sm tracking-wider uppercase mb-2 block">
-              // Credentials
+              Credentials
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
               Education & Certifications

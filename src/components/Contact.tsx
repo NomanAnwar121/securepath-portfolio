@@ -1,24 +1,24 @@
-import { Github, Linkedin, Mail, FileText, ArrowUpRight } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 const Contact = () => {
   const socialLinks = [
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com/mnomananwar",
-      username: "@mnomananwar",
+      href: "https://github.com/NomanAnwar121",
+      username: "@NomanAnwar121",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/mnomananwar",
-      username: "/in/mnomananwar",
+      href: "https://www.linkedin.com/in/m-noman-anwar-1388b9334/",
+      username: "/in/m-noman-anwar",
     },
     {
       icon: Mail,
       label: "Email",
-      href: "mailto:contact@mnomananwar.com",
-      username: "contact@mnomananwar.com",
+      href: "mailto:nomananwar550@gmail.com",
+      username: "nomananwar550@gmail.com",
     },
   ];
 
@@ -28,7 +28,7 @@ const Contact = () => {
         <div className="max-w-3xl mx-auto text-center">
           {/* Section Header */}
           <span className="terminal-text text-primary text-sm tracking-wider uppercase mb-2 block">
-            // Connect
+            Connect
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
             Let's Work Together
@@ -59,15 +59,6 @@ const Contact = () => {
             ))}
           </div>
 
-          {/* Resume CTA */}
-          <a
-            href="#"
-            className="group inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-primary/25"
-          >
-            <FileText className="w-5 h-5" />
-            Download Resume
-            <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-          </a>
         </div>
       </div>
     </section>

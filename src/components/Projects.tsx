@@ -1,4 +1,4 @@
-import { ExternalLink, Github, Shield, Server, Cloud, Lock } from "lucide-react";
+import { Shield, Server, Cloud, Lock } from "lucide-react";
 
 const Projects = () => {
   const projects = [
@@ -59,7 +59,7 @@ const Projects = () => {
           {/* Section Header */}
           <div className="text-center mb-16">
             <span className="terminal-text text-primary text-sm tracking-wider uppercase mb-2 block">
-              // Portfolio
+              Portfolio
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
               Featured Projects
@@ -114,16 +114,6 @@ const Projects = () => {
                         </li>
                       ))}
                     </ul>
-                  </div>
-
-                  {/* Actions */}
-                  <div className="flex lg:flex-col gap-3 flex-shrink-0">
-                    <button className="p-2 rounded-lg border border-border hover:border-primary hover:text-primary transition-colors">
-                      <Github className="w-5 h-5" />
-                    </button>
-                    <button className="p-2 rounded-lg border border-border hover:border-primary hover:text-primary transition-colors">
-                      <ExternalLink className="w-5 h-5" />
-                    </button>
                   </div>
                 </div>
               </div>

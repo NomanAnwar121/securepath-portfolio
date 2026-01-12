@@ -1,4 +1,4 @@
-import { Shield, Terminal, ChevronDown } from "lucide-react";
+import { Shield, ChevronDown } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -9,14 +9,6 @@ const Hero = () => {
       
       <div className="container relative z-10 px-6 py-20">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Terminal-style intro */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 mb-8 rounded-full border border-border bg-secondary/50 backdrop-blur-sm">
-            <Terminal className="w-4 h-4 text-primary" />
-            <span className="terminal-text text-sm text-muted-foreground">
-              <span className="text-primary">$</span> whoami
-            </span>
-          </div>
-
           {/* Name */}
           <h1 className="text-5xl md:text-7xl font-bold mb-4 tracking-tight">
             <span className="text-foreground">M Noman</span>{" "}
