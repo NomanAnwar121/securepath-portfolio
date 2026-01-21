@@ -5,8 +5,11 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center justify-center grid-pattern overflow-hidden">
       {/* Ambient glow effects */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-glow-pulse" />
-      <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-accent/10 rounded-full blur-3xl animate-glow-pulse" style={{ animationDelay: '1.5s' }} />
-      
+      <div
+        className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-accent/10 rounded-full blur-3xl animate-glow-pulse"
+        style={{ animationDelay: "1.5s" }}
+      />
+
       <div className="container relative z-10 px-6 py-20">
         <div className="max-w-4xl mx-auto text-center">
           {/* Name */}
@@ -25,7 +28,7 @@ const Hero = () => {
 
           {/* Tagline */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed">
-            Securing digital infrastructure through proactive defense, 
+            Securing digital infrastructure through proactive defense,
             penetration testing, and security-first development practices.
           </p>
 
@@ -36,7 +39,9 @@ const Hero = () => {
               className="group inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-primary/25 hover:-translate-y-0.5"
             >
               View Projects
-              <span className="group-hover:translate-x-1 transition-transform">→</span>
+              <span className="group-hover:translate-x-1 transition-transform">
+                →
+              </span>
             </a>
             <a
               href="#contact"

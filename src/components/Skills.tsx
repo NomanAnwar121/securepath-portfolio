@@ -5,7 +5,6 @@ const Skills = () => {
       skills: [
         "Penetration Testing (Web & Network)",
         "Vulnerability Assessment",
-        "OWASP Top 10",
         "SOC Operations",
         "Incident Response",
         "Security Auditing",
@@ -63,19 +62,13 @@ const Skills = () => {
           {/* Skills Grid */}
           <div className="grid md:grid-cols-2 gap-8">
             {skillCategories.map((category, index) => (
-              <div
-                key={index}
-                className="card-cyber p-6"
-              >
+              <div key={index} className="card-cyber p-6">
                 <h3 className="terminal-text text-xl font-semibold text-primary mb-6">
                   {category.title}
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill, skillIndex) => (
-                    <span
-                      key={skillIndex}
-                      className="skill-badge"
-                    >
+                    <span key={skillIndex} className="skill-badge">
                       {skill}
                     </span>
                   ))}

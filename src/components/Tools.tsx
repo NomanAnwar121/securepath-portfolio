@@ -2,23 +2,48 @@ const Tools = () => {
   const toolCategories = [
     {
       category: "Security Testing",
-      tools: ["Burp Suite", "OWASP ZAP", "Nmap", "Nessus", "Metasploit", "SQLMap", "Nikto", "Wireshark"],
+      tools: [
+        "Burp Suite",
+        "Nmap",
+        "Nessus",
+        "Metasploit",
+        "SQLMap",
+        "Nikto",
+        "Wireshark",
+      ],
     },
     {
       category: "Operating Systems",
-      tools: ["Kali Linux", "RHEL", "Ubuntu Server", "Windows Server", "Parrot OS"],
+      tools: [
+        "Kali Linux",
+        "RHEL",
+        "Ubuntu Server",
+        "Windows Server",
+        "Parrot OS",
+      ],
     },
     {
       category: "Cloud & DevOps",
-      tools: ["AWS Console", "Docker", "Kubernetes", "Terraform", "Ansible", "Git", "GitHub Actions"],
+      tools: [
+        "AWS Console",
+        "Docker",
+        "Kubernetes",
+        "Terraform",
+        "Ansible",
+        "Git",
+        "GitHub Actions",
+      ],
     },
     {
       category: "Development",
-      tools: ["VS Code", "Python", "Bash", "PowerShell", "Postman", "Jupyter Notebook"],
-    },
-    {
-      category: "Monitoring & SIEM",
-      tools: ["Splunk (Basics)", "ELK Stack", "Wazuh", "CloudTrail", "Security Hub"],
+      tools: [
+        "VS Code",
+        "Python",
+        "Bash",
+        "PowerShell",
+        "Postman",
+        "Jupyter Notebook",
+      ],
     },
   ];
 

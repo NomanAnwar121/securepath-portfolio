@@ -7,7 +7,7 @@ const Projects = () => {
       title: "Web Application Penetration Testing Lab",
       description:
         "Conducted comprehensive security assessments on intentionally vulnerable web applications including DVWA, bWAPP, and OWASP WebGoat. Identified and documented critical vulnerabilities across SQL Injection, XSS, CSRF, and authentication bypass vectors.",
-      technologies: ["Burp Suite", "OWASP ZAP", "Nmap", "SQLMap", "Python"],
+      technologies: ["Burp Suite", "Nmap", "SQLMap", "Python"],
       outcomes: [
         "Documented 25+ vulnerability types with remediation strategies",
         "Created custom exploitation scripts for automated testing",
@@ -19,7 +19,13 @@ const Projects = () => {
       title: "Dockerized Vulnerable Application Lab",
       description:
         "Designed and deployed a containerized security testing environment featuring multiple vulnerable applications. Implemented network segmentation and monitoring to simulate real-world attack scenarios in an isolated environment.",
-      technologies: ["Docker", "Docker Compose", "Wireshark", "Metasploit", "Kali Linux"],
+      technologies: [
+        "Docker",
+        "Docker Compose",
+        "Wireshark",
+        "Metasploit",
+        "Kali Linux",
+      ],
       outcomes: [
         "Built multi-container lab with 5+ vulnerable services",
         "Implemented network isolation using Docker networking",
@@ -31,7 +37,14 @@ const Projects = () => {
       title: "Linux Server Hardening Project",
       description:
         "Implemented comprehensive security hardening on RHEL and Ubuntu servers following CIS benchmarks. Configured secure SSH access, firewall rules, system auditing, and automated security patching workflows.",
-      technologies: ["RHEL", "Ubuntu", "iptables", "SELinux", "Ansible", "Bash"],
+      technologies: [
+        "RHEL",
+        "Ubuntu",
+        "iptables",
+        "SELinux",
+        "Ansible",
+        "Bash",
+      ],
       outcomes: [
         "Achieved 95%+ compliance with CIS Level 1 benchmarks",
         "Automated hardening scripts reducing manual effort by 80%",
@@ -43,7 +56,7 @@ const Projects = () => {
       title: "AWS Secure Architecture Design",
       description:
         "Architected a secure AWS infrastructure incorporating defense-in-depth principles. Implemented IAM policies with least privilege access, VPC security groups, CloudTrail logging, and automated security monitoring using AWS native services.",
-      technologies: ["AWS EC2", "IAM", "S3", "VPC", "CloudTrail", "Security Hub"],
+      technologies: ["AWS EC2", "IAM", "S3", "Security Hub"],
       outcomes: [
         "Designed multi-tier VPC with public/private subnets",
         "Implemented IAM roles and policies for service accounts",
