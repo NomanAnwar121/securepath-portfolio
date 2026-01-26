@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Shield } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -43,11 +43,13 @@ const Navbar = () => {
       <div className="container px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2 group">
-            <Shield className="w-5 h-5 text-primary" />
-            <span className="terminal-text font-semibold text-foreground group-hover:text-primary transition-colors">
-              MNA
-            </span>
+          <a href="#" className="flex items-center gap-3 group">
+            <img
+              src="/logo.png"
+              alt="M. Noman Anwar Logo"
+              className="w-20 h-15 object-contain group-hover:opacity-80 transition-opacity"
+            />
+           
           </a>
 
           {/* Desktop Navigation */}
