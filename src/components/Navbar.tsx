@@ -47,7 +47,7 @@ const Navbar = () => {
             <img
               src="/logo.png"
               alt="M. Noman Anwar Logo"
-              className="w-20 h-15 object-contain group-hover:opacity-80 transition-opacity"
+              className="w-10 h-10 object-contain group-hover:opacity-80 transition-opacity"
             />
            
           </a>
