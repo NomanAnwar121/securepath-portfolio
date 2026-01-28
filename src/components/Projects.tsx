@@ -71,10 +71,10 @@ const Projects = () => {
         <div className="max-w-5xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <span className="terminal-text text-primary text-sm tracking-wider uppercase mb-2 block">
+            <span className="terminal-text text-primary text-sm tracking-wider uppercase mb-2 block scroll-animate">
               Portfolio
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground scroll-animate" data-delay="200">
               Featured Projects
             </h2>
           </div>
@@ -84,11 +84,14 @@ const Projects = () => {
             {projects.map((project, index) => (
               <div
                 key={index}
-                className="card-cyber p-8 transition-all duration-300 hover:border-primary/50"
+                className={`card-cyber p-8 transition-all duration-300 hover:border-primary/50 ${
+                  index % 2 === 0 ? 'scroll-animate-left' : 'scroll-animate-right'
+                }`}
+                data-delay={index * 200}
               >
                 <div className="flex flex-col lg:flex-row lg:items-start gap-6">
-                  {/* Icon */}
-                  <div className="flex-shrink-0">
+                  {/* Icon with Project Number */}
+                  <div className="flex-shrink-0 flex items-center gap-4">
                     <div className="w-14 h-14 rounded-lg bg-primary/10 border border-primary/30 flex items-center justify-center">
                       <project.icon className="w-7 h-7 text-primary" />
                     </div>
@@ -108,7 +111,7 @@ const Projects = () => {
                       {project.technologies.map((tech, techIndex) => (
                         <span
                           key={techIndex}
-                          className="px-2 py-1 text-xs terminal-text bg-secondary text-primary border border-border rounded"
+                          className="px-2 py-1 text-xs terminal-text bg-secondary text-primary border border-border rounded hover:border-primary/50 transition-colors"
                         >
                           {tech}
                         </span>
@@ -131,6 +134,14 @@ const Projects = () => {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* View All Projects Button */}
+          <div className="text-center mt-12 scroll-animate-scale" data-delay="600">
+            <button className="btn-heavy inline-flex items-center gap-2 px-8 py-4 bg-primary/10 border border-primary/30 text-primary font-semibold rounded-lg hover:bg-primary hover:text-primary-foreground">
+              <span className="relative z-10">View All Projects</span>
+              <span className="relative z-10">→</span>
+            </button>
           </div>
         </div>
       </div>

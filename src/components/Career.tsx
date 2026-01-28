@@ -21,26 +21,26 @@ const Career = () => {
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <span className="terminal-text text-primary text-sm tracking-wider uppercase mb-2 block">
+            <span className="terminal-text text-primary text-sm tracking-wider uppercase mb-2 block scroll-animate">
               Vision
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground scroll-animate" data-delay="200">
               Career Objective
             </h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             {/* Objectives */}
-            <div className="card-cyber p-8">
-              <div className="flex items-center gap-3 mb-6">
+            <div className="card-cyber p-8 btn-heavy scroll-animate-left" data-delay="400">
+              <div className="flex items-center gap-3 mb-6 relative z-10">
                 <Target className="w-6 h-6 text-primary" />
                 <h3 className="terminal-text text-xl font-semibold text-foreground">
                   Professional Goals
                 </h3>
               </div>
-              <ul className="space-y-4">
+              <ul className="space-y-4 relative z-10">
                 {objectives.map((objective, index) => (
-                  <li key={index} className="flex items-start gap-3">
+                  <li key={index} className="flex items-start gap-3 hover:text-primary transition-colors">
                     <span className="text-primary mt-1.5 text-sm">▹</span>
                     <span className="text-muted-foreground">{objective}</span>
                   </li>
@@ -49,20 +49,21 @@ const Career = () => {
             </div>
 
             {/* Target Roles */}
-            <div className="card-cyber p-8">
-              <div className="flex items-center gap-3 mb-6">
+            <div className="card-cyber p-8 btn-heavy scroll-animate-right" data-delay="600">
+              <div className="flex items-center gap-3 mb-6 relative z-10">
                 <TrendingUp className="w-6 h-6 text-primary" />
                 <h3 className="terminal-text text-xl font-semibold text-foreground">
                   Target Positions
                 </h3>
               </div>
-              <div className="space-y-3">
+              <div className="space-y-3 relative z-10">
                 {targetRoles.map((role, index) => (
                   <div
                     key={index}
-                    className="flex items-center gap-3 p-3 bg-background border border-border rounded-lg hover:border-primary/50 transition-colors"
+                    className="flex items-center gap-3 p-3 bg-background border border-border rounded-lg hover:border-primary/50 hover:animate-cyber-glitch transition-all duration-300 cursor-default"
+                    style={{ animationDelay: `${index * 100}ms` }}
                   >
-                    <div className="w-2 h-2 bg-primary rounded-full" />
+                    <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
                     <span className="text-foreground font-medium">{role}</span>
                   </div>
                 ))}
@@ -71,8 +72,8 @@ const Career = () => {
           </div>
 
           {/* Statement */}
-          <div className="mt-12 card-cyber p-8 text-center">
-            <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+          <div className="mt-12 card-cyber p-8 text-center btn-heavy scroll-animate-scale" data-delay="800">
+            <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto relative z-10">
               I am seeking opportunities to apply my technical knowledge in 
               real-world security environments, contribute to organizational 
               security posture, and continue developing expertise in offensive 

@@ -51,10 +51,10 @@ const Skills = () => {
         <div className="max-w-5xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <span className="terminal-text text-primary text-sm tracking-wider uppercase mb-2 block">
+            <span className="terminal-text text-primary text-sm tracking-wider uppercase mb-2 block scroll-animate">
               Technical Proficiency
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground scroll-animate" data-delay="200">
               Skills & Expertise
             </h2>
           </div>
@@ -62,13 +62,23 @@ const Skills = () => {
           {/* Skills Grid */}
           <div className="grid md:grid-cols-2 gap-8">
             {skillCategories.map((category, index) => (
-              <div key={index} className="card-cyber p-6">
-                <h3 className="terminal-text text-xl font-semibold text-primary mb-6">
+              <div 
+                key={index} 
+                className={`card-cyber p-6 btn-heavy ${
+                  index % 2 === 0 ? 'scroll-animate-left' : 'scroll-animate-right'
+                }`}
+                data-delay={400 + index * 200}
+              >
+                <h3 className="terminal-text text-xl font-semibold text-primary mb-6 relative z-10">
                   {category.title}
                 </h3>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 relative z-10">
                   {category.skills.map((skill, skillIndex) => (
-                    <span key={skillIndex} className="skill-badge">
+                    <span 
+                      key={skillIndex} 
+                      className="skill-badge hover:animate-cyber-glitch cursor-default"
+                      style={{ animationDelay: `${skillIndex * 100}ms` }}
+                    >
                       {skill}
                     </span>
                   ))}

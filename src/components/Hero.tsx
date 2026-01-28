@@ -12,14 +12,16 @@ const Hero = () => {
 
       <div className="container relative z-10 px-6 py-20">
         <div className="max-w-4xl mx-auto text-center">
+
+
           {/* Name */}
-          <h1 className="text-5xl md:text-7xl font-bold mb-4 tracking-tight">
+          <h1 className="text-5xl md:text-7xl font-bold mb-4 tracking-tight scroll-animate" data-delay="200">
             <span className="text-foreground">M Noman</span>{" "}
             <span className="text-gradient">Anwar</span>
           </h1>
 
           {/* Professional Headline */}
-          <div className="flex items-center justify-center gap-3 mb-8">
+          <div className="flex items-center justify-center gap-3 mb-8 scroll-animate" data-delay="400">
             <Shield className="w-6 h-6 text-primary" />
             <p className="text-xl md:text-2xl terminal-text text-secondary-foreground">
               Cybersecurity Engineer | DevSecOps Practitioner
@@ -27,33 +29,33 @@ const Hero = () => {
           </div>
 
           {/* Tagline */}
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed scroll-animate" data-delay="600">
             Securing digital infrastructure through proactive defense,
             penetration testing, and security-first development practices.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 scroll-animate" data-delay="800">
             <a
               href="#projects"
-              className="group inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-primary/25 hover:-translate-y-0.5"
+              className="group btn-heavy inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-lg"
             >
-              View Projects
-              <span className="group-hover:translate-x-1 transition-transform">
+              <span className="relative z-10">View Projects</span>
+              <span className="group-hover:translate-x-1 transition-transform relative z-10">
                 →
               </span>
             </a>
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 px-8 py-4 border border-border text-foreground font-semibold rounded-lg transition-all duration-300 hover:border-primary hover:text-primary"
+              className="btn-heavy inline-flex items-center gap-2 px-8 py-4 border border-border text-foreground font-semibold rounded-lg hover:border-primary hover:text-primary"
             >
-              Get in Touch
+              <span className="relative z-10">Get in Touch</span>
             </a>
           </div>
         </div>
 
         {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce scroll-animate" data-delay="1000">
           <ChevronDown className="w-6 h-6 text-muted-foreground" />
         </div>
       </div>

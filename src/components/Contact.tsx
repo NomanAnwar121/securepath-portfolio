@@ -109,13 +109,13 @@ const Contact = () => {
       <div className="container px-6">
         <div className="max-w-3xl mx-auto text-center">
           {/* Section Header */}
-          <span className="terminal-text text-primary text-sm tracking-wider uppercase mb-2 block">
+          <span className="terminal-text text-primary text-sm tracking-wider uppercase mb-2 block scroll-animate">
             Connect
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 scroll-animate" data-delay="200">
             Let's Work Together
           </h2>
-          <p className="text-lg text-muted-foreground mb-12 max-w-xl mx-auto">
+          <p className="text-lg text-muted-foreground mb-12 max-w-xl mx-auto scroll-animate" data-delay="400">
             Open to discussing cybersecurity opportunities, collaborative 
             projects, or security consulting engagements.
           </p>
@@ -128,10 +128,11 @@ const Contact = () => {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group card-cyber p-6 flex flex-col items-center gap-3 hover:border-primary/50 transition-all duration-300"
+                className={`group card-cyber p-6 flex flex-col items-center gap-3 hover:border-primary/50 transition-all duration-300 btn-heavy scroll-animate-scale`}
+                data-delay={600 + index * 100}
               >
-                <link.icon className="w-8 h-8 text-muted-foreground group-hover:text-primary transition-colors" />
-                <div>
+                <link.icon className="w-8 h-8 text-muted-foreground group-hover:text-primary transition-colors relative z-10" />
+                <div className="relative z-10">
                   <p className="font-semibold text-foreground group-hover:text-primary transition-colors">
                     {link.label}
                   </p>
@@ -142,7 +143,7 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="max-w-2xl mx-auto">
+          <div className="max-w-2xl mx-auto scroll-animate" data-delay="900">
             <div className="card-cyber p-8">
               <h3 className="text-2xl font-bold text-foreground mb-6">Send a Message</h3>
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -155,7 +156,7 @@ const Contact = () => {
                       value={formData.name}
                       onChange={handleInputChange}
                       required
-                      className="bg-background/50 border-muted-foreground/20 focus:border-primary"
+                      className="bg-background/50 border-muted-foreground/20 focus:border-primary transition-all duration-300"
                     />
                   </div>
                   <div>
@@ -166,7 +167,7 @@ const Contact = () => {
                       value={formData.email}
                       onChange={handleInputChange}
                       required
-                      className="bg-background/50 border-muted-foreground/20 focus:border-primary"
+                      className="bg-background/50 border-muted-foreground/20 focus:border-primary transition-all duration-300"
                     />
                   </div>
                 </div>
@@ -178,7 +179,7 @@ const Contact = () => {
                     value={formData.subject}
                     onChange={handleInputChange}
                     required
-                    className="bg-background/50 border-muted-foreground/20 focus:border-primary"
+                    className="bg-background/50 border-muted-foreground/20 focus:border-primary transition-all duration-300"
                   />
                 </div>
                 <div>
@@ -189,17 +190,17 @@ const Contact = () => {
                     onChange={handleInputChange}
                     required
                     rows={6}
-                    className="bg-background/50 border-muted-foreground/20 focus:border-primary resize-none"
+                    className="bg-background/50 border-muted-foreground/20 focus:border-primary resize-none transition-all duration-300"
                   />
                 </div>
-                <Button 
+                <button 
                   type="submit" 
                   disabled={isLoading}
-                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground disabled:opacity-50"
+                  className="w-full btn-heavy bg-primary hover:bg-primary/90 text-primary-foreground disabled:opacity-50 px-8 py-4 rounded-lg font-semibold flex items-center justify-center gap-2"
                 >
-                  <Send className="w-4 h-4 mr-2" />
-                  {isLoading ? "Sending..." : "Send Message"}
-                </Button>
+                  <Send className="w-4 h-4 relative z-10" />
+                  <span className="relative z-10">{isLoading ? "Sending..." : "Send Message"}</span>
+                </button>
               </form>
               <p className="text-sm text-muted-foreground mt-4 text-center">
                 Your message will be sent directly to nomananwar550@gmail.com
